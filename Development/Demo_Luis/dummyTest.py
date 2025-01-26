@@ -2,7 +2,7 @@ import os
 import pytesseract
 from PIL import Image
 
-def readImage(name, option=0):
+def readImage(name="", option=0):
     ans = None
     if not option:
         _, _, files = next(os.walk("images"))
